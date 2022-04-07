@@ -1,0 +1,9 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/sefatno/exam2",
+            "binaryPath": "/home/sefatno/exam2/c63enc",
+            "binaryArgs": []
+        }
+    ]
+}

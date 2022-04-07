@@ -19,7 +19,7 @@ DEPENDENCIES = $(addprefix .,$(SOURCES:.c=.d))  # Add dot prefix to hide files.
 
 .PHONY: clean  all
 
-all: c63enc c63dec c63pred
+all: c63enc #c63dec c63pred
 %.o: %.cu
 	$(CC) $(CFLAGS) $(CUFLAGS) -c $< 
 

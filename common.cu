@@ -7,8 +7,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "common.h"
-#include "dsp.h"
+#include "common.cuh"
+#include "dsp.cuh"
 
 
 void dequantize_idct_row(int16_t *in_data, uint8_t *prediction, int w, int h,

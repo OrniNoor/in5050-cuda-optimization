@@ -8,12 +8,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "c63.h"
-#include "c63_write.h"
-#include "common.h"
-#include "tables.h"
+#include "c63.cuh"
+#include "me.cuh"
+#include "c63_write.cuh"
+#include "common.cuh"
+#include "tables.cuh"
 
-
+__global__ static void enc_gpu(struct c63_common *cm, yuv_t *image);
 static char *output_file, *input_file;
 FILE *outfile;
 
@@ -91,11 +92,6 @@ __global__ static void enc_gpu(struct c63_common *cm, yuv_t *image){
   c63_motion_estimate<<<1,3>>>(cm);
   c63_motion_compensate<<<1,3>>>(cm);
   }
-
-
-
-
-
 }
 static void c63_encode_image(struct c63_common *cm, yuv_t *image)
 {

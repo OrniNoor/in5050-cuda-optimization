@@ -1,5 +1,5 @@
-#ifndef C63_C63_H_
-#define C63_C63_H_
+#ifndef C63_C63_CUH_
+#define C63_C63_CUH_
 
 #include <inttypes.h>
 #include <stdint.h>
@@ -113,7 +113,7 @@ struct c63_common
 };
 
 
-/* 'common.c' */
+/* 'common.cu' */
 void dct_quantize(uint8_t *in_data, uint8_t *prediction, uint32_t width,
     uint32_t height, int16_t *out_data, uint8_t *quantization);
 void dequantize_idct(int16_t *in_data, uint8_t *prediction, uint32_t width,
@@ -121,8 +121,7 @@ void dequantize_idct(int16_t *in_data, uint8_t *prediction, uint32_t width,
 void destroy_frame(struct frame *f);
 void dump_image(yuv_t *image, int w, int h, FILE *fp);
 
-/*'me.c' */
-void c63_motion_estimate(struct c63_common_cpu *cm);
-void c63_motion_compensate(struct c63_common_cpu *cm);
+/*'me.cu' */
 
-#endif  /* C63_C63_H_ */
+
+#endif  /* C63_C63_CUH_ */

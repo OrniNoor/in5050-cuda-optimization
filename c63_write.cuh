@@ -1,7 +1,7 @@
 #ifndef C63_WRITE_H_
 #define C63_WRITE_H_
 
-#include "c63.h"
+#include "c63.cuh"
 
 // Declaration
 void write_frame(struct c63_common *cm);

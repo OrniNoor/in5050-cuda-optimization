@@ -1,9 +1,9 @@
-#ifndef C63_COMMON_H_
-#define C63_COMMON_H_
+#ifndef C63_COMMON_CUH_
+#define C63_COMMON_CUH_
 
 #include <inttypes.h>
 
-#include "c63.h"
+#include "c63.cuh"
 
 // Declarations
 struct frame* create_frame(struct c63_common *cm, yuv_t *image);

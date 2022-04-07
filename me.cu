@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "dsp.h"
+#include "dsp.cuh"
 #include "me.cuh"
 
 /* Motion estimation for 8x8 block */

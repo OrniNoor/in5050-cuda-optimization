@@ -4,7 +4,7 @@
 #include <inttypes.h>
 #include <stdio.h>
 
-#include "c63.h"
+#include "c63.cuh"
 
 // Declarations
 int read_bytes(FILE *fp, void *data, unsigned int sz);
